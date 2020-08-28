@@ -1,4 +1,4 @@
-[Go back to listing](../README.MD)
+[Go back to listing](../README.md)
 
 # Problem Name - Longest Common Subsequence
 

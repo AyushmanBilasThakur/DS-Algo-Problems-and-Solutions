@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-
 using namespace std;
 
 int max(int a, int b) {
@@ -8,10 +7,7 @@ int max(int a, int b) {
 };
 
 int longestCommonSubstring(string a, string b){
-
     int solutionTable[a.length() + 1][b.length() + 1];
-
-
 
     for(int i = 0; i <= a.length(); i++){
         for(int j = 0; j <= b.length(); j++){
@@ -20,6 +16,7 @@ int longestCommonSubstring(string a, string b){
             else solutionTable[i][j] = max(solutionTable[i-1][j], solutionTable[i][j-1]);
         }
     }
+    
     return solutionTable[a.length()][b.length()];
 }
 

@@ -1,16 +1,8 @@
-def max(a, b):
-    if(a > b): 
-        return a
-    else:
-        return b 
-
 a = input()
 b = input()
 
 len_a = len(a)
 len_b = len(b)
-
-# print(a[1],b[1],len(a), len(b))
 
 solution_table = [[0]*(len_b + 1)]*(len_a + 1)
 
